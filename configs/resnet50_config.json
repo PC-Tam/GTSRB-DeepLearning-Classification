@@ -1,0 +1,75 @@
+{
+    "section": "Section 2",
+    "model_name": "ResNet50",
+    "task": "GTSRB Traffic Sign Classification",
+    "num_classes": 43,
+    "base_dir": "/content/drive/MyDrive/Deep_Learning",
+    "train_csv": "/content/drive/MyDrive/Deep_Learning/data/splits/train.csv",
+    "val_csv": "/content/drive/MyDrive/Deep_Learning/data/splits/val.csv",
+    "class_mapping_path": "/content/drive/MyDrive/Deep_Learning/data/splits/class_mapping.json",
+    "image_size": 224,
+    "batch_size": 32,
+    "num_workers": 2,
+    "epochs": 15,
+    "learning_rate": 0.001,
+    "optimizer": "Adam",
+    "loss_function": "CrossEntropyLoss",
+    "pretrained_weights": "ResNet50_Weights.DEFAULT",
+    "transfer_learning": true,
+    "freeze_backbone": true,
+    "trainable_layer": "fc",
+    "train_transform": {
+        "Resize": [
+            224,
+            224
+        ],
+        "RandomRotation": 15,
+        "ColorJitter": {
+            "brightness": 0.2,
+            "contrast": 0.2
+        },
+        "Normalize": {
+            "mean": [
+                0.485,
+                0.456,
+                0.406
+            ],
+            "std": [
+                0.229,
+                0.224,
+                0.225
+            ]
+        }
+    },
+    "val_transform": {
+        "Resize": [
+            224,
+            224
+        ],
+        "Normalize": {
+            "mean": [
+                0.485,
+                0.456,
+                0.406
+            ],
+            "std": [
+                0.229,
+                0.224,
+                0.225
+            ]
+        }
+    },
+    "checkpoint_paths": {
+        "best": "/content/drive/MyDrive/Deep_Learning/checkpoints/resnet50_best.pth",
+        "last": "/content/drive/MyDrive/Deep_Learning/checkpoints/resnet50_last.pth",
+        "resume": "/content/drive/MyDrive/Deep_Learning/checkpoints/resnet50_resume.pth"
+    },
+    "history_paths": {
+        "history_csv": "/content/drive/MyDrive/Deep_Learning/history/history_resnet.csv",
+        "history_json": "/content/drive/MyDrive/Deep_Learning/history/history_resnet.json",
+        "classification_report": "/content/drive/MyDrive/Deep_Learning/history/classification_report_resnet.txt",
+        "summary": "/content/drive/MyDrive/Deep_Learning/history/summary_resnet.json"
+    },
+    "device": "cuda",
+    "seed": 42
+}
