@@ -1,0 +1,20 @@
+# Tệp dữ liệu lớn và thư mục giải nén
+data/raw/
+data/extracted/
+
+# Tệp trọng số mô hình nặng (> 50MB)
+checkpoints/*.pth
+checkpoints/*.pt
+
+# Tệp đệm numpy
+history/*.npy
+
+# Thư mục cấu hình và cache Python
+__pycache__/
+.ipynb_checkpoints/
+.vscode/
+
+# Thư mục môi trường ảo
+venv/
+env/
+.env

@@ -3,12 +3,12 @@
     "epochs": 15,
     "best_epoch": 12,
     "best_val_acc": 0.864575363427697,
-    "final_val_loss": 0.4379002073382091,
+    "final_val_loss": 0.43793927885932116,
     "final_val_acc": 0.864575363427697,
     "avg_epoch_time_sec": 144.36645007133484,
     "best_checkpoint_size_mb": 90.99267101287842,
-    "best_checkpoint_path": "/content/drive/MyDrive/Deep_Learning/checkpoints/resnet50_best.pth",
-    "resume_checkpoint_path": "/content/drive/MyDrive/Deep_Learning/checkpoints/resnet50_resume.pth",
-    "history_csv_path": "/content/drive/MyDrive/Deep_Learning/history/history_resnet.csv",
-    "classification_report_path": "/content/drive/MyDrive/Deep_Learning/history/classification_report_resnet.txt"
+    "best_checkpoint_path": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\checkpoints\\resnet50_best.pth",
+    "resume_checkpoint_path": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\checkpoints\\resnet50_resume.pth",
+    "history_csv_path": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\history\\history_resnet.csv",
+    "classification_report_path": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\history\\classification_report_resnet.txt"
 }

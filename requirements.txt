@@ -1,0 +1,28 @@
+# ============================================================
+# GTSRB Deep Learning Classification - Requirements
+# ============================================================
+# Cài đặt: pip install -r requirements.txt
+# ============================================================
+
+# --- Core Deep Learning ---
+torch>=2.0.0
+torchvision>=0.15.0
+
+# --- Data & Scientific Computing ---
+numpy>=1.24.0
+pandas>=2.0.0
+
+# --- Image Processing ---
+Pillow>=9.5.0
+
+# --- Machine Learning Utilities ---
+scikit-learn>=1.2.0
+
+# --- Visualization ---
+matplotlib>=3.7.0
+
+# --- Progress Bar ---
+tqdm>=4.65.0
+
+# --- Demo UI (Section 4) ---
+gradio>=4.0.0

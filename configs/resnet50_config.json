@@ -3,13 +3,13 @@
     "model_name": "ResNet50",
     "task": "GTSRB Traffic Sign Classification",
     "num_classes": 43,
-    "base_dir": "/content/drive/MyDrive/Deep_Learning",
-    "train_csv": "/content/drive/MyDrive/Deep_Learning/data/splits/train.csv",
-    "val_csv": "/content/drive/MyDrive/Deep_Learning/data/splits/val.csv",
-    "class_mapping_path": "/content/drive/MyDrive/Deep_Learning/data/splits/class_mapping.json",
+    "base_dir": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification",
+    "train_csv": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\data\\splits\\Train.csv",
+    "val_csv": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\data\\splits\\val.csv",
+    "class_mapping_path": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\data\\splits\\class_mapping.json",
     "image_size": 224,
     "batch_size": 32,
-    "num_workers": 2,
+    "num_workers": 0,
     "epochs": 15,
     "learning_rate": 0.001,
     "optimizer": "Adam",
@@ -60,16 +60,16 @@
         }
     },
     "checkpoint_paths": {
-        "best": "/content/drive/MyDrive/Deep_Learning/checkpoints/resnet50_best.pth",
-        "last": "/content/drive/MyDrive/Deep_Learning/checkpoints/resnet50_last.pth",
-        "resume": "/content/drive/MyDrive/Deep_Learning/checkpoints/resnet50_resume.pth"
+        "best": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\checkpoints\\resnet50_best.pth",
+        "last": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\checkpoints\\resnet50_last.pth",
+        "resume": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\checkpoints\\resnet50_resume.pth"
     },
     "history_paths": {
-        "history_csv": "/content/drive/MyDrive/Deep_Learning/history/history_resnet.csv",
-        "history_json": "/content/drive/MyDrive/Deep_Learning/history/history_resnet.json",
-        "classification_report": "/content/drive/MyDrive/Deep_Learning/history/classification_report_resnet.txt",
-        "summary": "/content/drive/MyDrive/Deep_Learning/history/summary_resnet.json"
+        "history_csv": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\history\\history_resnet.csv",
+        "history_json": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\history\\history_resnet.json",
+        "classification_report": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\history\\classification_report_resnet.txt",
+        "summary": "c:\\Users\\pct2k\\Downloads\\DL\\GTSRB-DeepLearning-Classification\\history\\summary_resnet.json"
     },
-    "device": "cuda",
+    "device": "cpu",
     "seed": 42
 }
